@@ -1,15 +1,57 @@
 ---
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="grid h-screen w-full place-items-center">
+	<main class="bg-white drop-shadow-lg w-1/2 rounded-lg flex flex-row overflow-hidden">
+			<section id="result" class="bg-gradient-to-b from-lightslateblue to-lightroyalblue rounded-lg w-1/2 flex flex-col justify-center items-center p-8 gap-4">
+					<h1 class="text-xl text-lightlavander">Your Result</h1>
+					<div class="bg-gradient-to-b from-violetblue to-persianblue flex rounded-full w-32 h-32 flex-col justify-center items-center">
+						  <span class="text-6xl font-bold text-white">76</span>
+  						<span class="text-lightlavander">of 100</span>
+					</div>
+					<h2 class="text-white text-2xl">Great</h2 >
+  				<span class="text-lightlavander px-4 text-center">You scored higher than 65% of the people who have taken these tests.</span>
+
+			</section>
+			<section id="summary" class="w-1/2 flex flex-col gap-4 p-8">
+					<h1>Summary</h1>
+					<ul class="[&>li]:rounded-lg [&>li]:flex [&>li]:flex-row [&>li]:px-2 [&>li]:py-3">
+						<li class="bg-red-200">Reaction 80 / 100 </li>
+						<li>Memory 92 / 100</li>
+						<li>Verbal 61 / 100</li>		
+						<li>Visual 72 / 100</li>
+					</ul>
+					<a href="">Continue</a>
+			</section>
+	</main>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
 </html>
+
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+	* {
+		font-family: "Montserrat", sans-serif;
+	}
+</style>
