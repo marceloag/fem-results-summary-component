@@ -5,53 +5,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body class="grid h-screen w-full place-items-center">
-	<main class="bg-white drop-shadow-lg w-1/2 rounded-lg flex flex-row overflow-hidden">
-			<section id="result" class="bg-gradient-to-b from-lightslateblue to-lightroyalblue rounded-lg w-1/2 flex flex-col justify-center items-center p-8 gap-4">
+	<main class="bg-white md:shadow-2xl w-full md:w-auto rounded-none md:rounded-3xl flex-col md:flex-row flex overflow-hidden md:shadow-paleblue">
+			<section id="result" class="bg-gradient-to-b from-lightslateblue to-lightroyalblue md:rounded-3xl w-full md:w-1/2 flex flex-col justify-center items-center py-10 px-14 gap-4 rounded-t-none rounded-b-3xl">
 					<h1 class="text-xl text-lightlavander">Your Result</h1>
-					<div class="bg-gradient-to-b from-violetblue to-persianblue flex rounded-full w-32 h-32 flex-col justify-center items-center">
+					<div class="bg-gradient-to-b from-violetblue to-persianblue flex rounded-full w-36 h-36 md:w-48 md:h-48 md:p-0 flex-col justify-center items-center">
 						  <span class="text-6xl font-bold text-white">76</span>
   						<span class="text-lightlavander">of 100</span>
 					</div>
 					<h2 class="text-white text-2xl">Great</h2 >
-  				<span class="text-lightlavander px-4 text-center">You scored higher than 65% of the people who have taken these tests.</span>
-
+  				<span class="text-lightlavander px-4 text-center w-80 md:w-64">You scored higher than 65% of the people who have taken these tests.</span>
 			</section>
-			<section id="summary" class="w-1/2 flex flex-col gap-4 p-8">
-					<h1>Summary</h1>
-					<ul class="[&>li]:rounded-lg [&>li]:flex [&>li]:flex-row [&>li]:px-2 [&>li]:py-3">
-						<li class="bg-red-200">Reaction 80 / 100 </li>
-						<li>Memory 92 / 100</li>
-						<li>Verbal 61 / 100</li>		
-						<li>Visual 72 / 100</li>
+			<section id="summary" class="w-full md:w-1/2 flex flex-col gap-8 py-6 md:py-10 px-8">
+					<h1 class="text-xl font-bold text-darkgreyblue">Summary</h1>
+					<ul class="[&>li]:rounded-lg [&>li]:flex [&>li]:flex-row [&>li]:px-4 [&>li]:py-3 [&>li]:gap-1 [&>li]:justify-between flex flex-col gap-3 [&>li>span]">
+						<li class="bg-lightred bg-opacity-5">
+              <img src="/images/icon-reaction.svg" alt="Reaction" >
+              <span class="text-lightred">Reaction</span>
+              <span class="flex flex-grow flex-row justify-end">80 <b class=" text-[#A6ADAF] pl-2"> / 100</b></span>
+            </li>
+						<li class="bg-orangeyellow bg-opacity-5">
+              <img src="/images/icon-memory.svg" alt="Memory" >
+              <span class="text-orangeyellow">Memory </span>
+              <span class="flex flex-grow flex-row justify-end">92<b class=" text-[#A6ADAF] pl-2"> / 100</b></span> 
+            </li>
+						<li class="bg-greenteal bg-opacity-5">
+              <img src="/images/icon-verbal.svg" alt="Verbal" >
+              <span class="text-greenteal">Verbal</span>
+              <span class="flex flex-grow flex-row justify-end">61<b class=" text-[#A6ADAF] pl-2"> / 100</b></span>
+            </li>		
+						<li class="bg-cobaltblue bg-opacity-5">
+              <img src="/images/icon-visual.svg" alt="Visual" >
+              <span class="text-cobaltblue">Visual</span>
+              <span class="flex flex-grow flex-row justify-end"> 72<b class=" text-[#A6ADAF] pl-2"> / 100</b></span>
+            </li>
 					</ul>
-					<a href="">Continue</a>
+					<a href="" class="rounded-3xl bg-gradient-to-b from-darkgreyblue to-darkgreyblue text-paleblue py-3 text-center hover:bg-gradient-to-b hover:from-lightslateblue hover:to-lightroyalblue transition-all ease-in-out duration-100">Continue</a>
 			</section>
 	</main>
 
   
-  <!-- <div class="attribution">
+  <div class="absolute bottom-0 hidden md:block pb-2 text-darkgreyblue">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="http://github.com/marceloag" class=" text-lightslateblue">@marceloag</a>.
+  </div> 
 </body>
 </html>
 
 <style is:global>
-	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 	* {
-		font-family: "Montserrat", sans-serif;
+		font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    color: hsl(224, 30%, 27%);
 	}
 </style>

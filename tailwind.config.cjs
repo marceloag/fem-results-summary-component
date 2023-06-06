@@ -4,6 +4,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
+        lightred: "hsl(0, 100%, 67%)",
+        orangeyellow: "hsl(39, 100%, 56%)",
+        greenteal: "hsl(166, 100%, 37%)",
+        cobaltblue: "hsl(234, 85%, 45%)",
 				lightslateblue: "#7857FF",
 				lightroyalblue: "#2E2BE9",
 				paleblue: "hsl(221, 100%, 96%)",
